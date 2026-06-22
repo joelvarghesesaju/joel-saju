@@ -1,0 +1,33 @@
+{
+  "heading": "Case studies",
+  "subtitle": "Tangible outcomes from automation projects delivered for real businesses.",
+  "items": [
+    {
+      "industry": "Real Estate",
+      "problem": "Agents manually copied Facebook leads into HubSpot, often hours late.",
+      "automation": "Built an n8n workflow using Facebook Lead Ads, HubSpot, OpenAI, and Slack to capture, enrich, and route leads instantly.",
+      "apps": ["Facebook", "HubSpot", "OpenAI", "Slack"],
+      "hoursSaved": "15 hrs/week",
+      "moneySaved": "$12,000/year",
+      "result": "Lead response time dropped from 3 hours to under 5 minutes."
+    },
+    {
+      "industry": "E-commerce",
+      "problem": "Support agents answered the same order-status questions all day long.",
+      "automation": "Deployed an AI support assistant that pulls live order data and resolves tickets across email and WhatsApp.",
+      "apps": ["n8n", "OpenAI", "Shopify", "WhatsApp"],
+      "hoursSaved": "22 hrs/week",
+      "moneySaved": "$28,000/year",
+      "result": "71% of tickets resolved automatically with higher CSAT."
+    },
+    {
+      "industry": "Marketing Agency",
+      "problem": "Monthly client reports were assembled by hand from six platforms.",
+      "automation": "Automated reporting that pulls metrics, generates AI summaries, and delivers branded reports on schedule.",
+      "apps": ["n8n", "Google Analytics", "OpenAI", "Notion"],
+      "hoursSaved": "18 hrs/week",
+      "moneySaved": "$19,500/year",
+      "result": "Reporting went from 2 days to fully hands-off."
+    }
+  ]
+}

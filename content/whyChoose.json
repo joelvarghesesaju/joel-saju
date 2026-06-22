@@ -1,0 +1,21 @@
+{
+  "heading": "Why choose me",
+  "subtitle": "A specialist partner who cares about outcomes, not just shipping workflows.",
+  "items": [
+    {
+      "icon": "zap",
+      "title": "Fast Delivery",
+      "description": "Most workflows are scoped, built, and delivered within days, not months."
+    },
+    {
+      "icon": "settings2",
+      "title": "Custom Solutions",
+      "description": "Every automation is tailored specifically for your business, tools, and goals."
+    },
+    {
+      "icon": "lifeBuoy",
+      "title": "Ongoing Support",
+      "description": "Continuous improvements, monitoring, and maintenance long after launch."
+    }
+  ]
+}

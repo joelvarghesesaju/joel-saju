@@ -1,0 +1,26 @@
+{
+  "heading": "Frequently asked questions",
+  "subtitle": "Everything you need to know before we get started.",
+  "items": [
+    {
+      "question": "What is n8n?",
+      "answer": "n8n is a powerful workflow automation platform that connects your apps and APIs without locking you into a single vendor. It lets me build flexible, custom automations that you fully own, with no per-task pricing surprises."
+    },
+    {
+      "question": "Can you integrate my CRM?",
+      "answer": "Almost certainly. I work with HubSpot, Pipedrive, Salesforce, Zoho, and many others. If your CRM has an API or webhooks, I can connect it and keep your data in sync automatically."
+    },
+    {
+      "question": "Can AI be included?",
+      "answer": "Absolutely. I integrate models like OpenAI's GPT to qualify leads, draft replies, summarize data, and power chatbots, adding real intelligence to your workflows where it creates leverage."
+    },
+    {
+      "question": "How long does a project take?",
+      "answer": "Most single automations are delivered within a few days. Larger, multi-workflow projects typically take one to three weeks depending on complexity and the number of integrations."
+    },
+    {
+      "question": "Do you provide support after delivery?",
+      "answer": "Yes. Every project includes a support window, and I offer ongoing maintenance plans for monitoring, improvements, and adapting workflows as your business evolves."
+    }
+  ]
+}

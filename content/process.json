@@ -1,0 +1,30 @@
+{
+  "heading": "How we work together",
+  "subtitle": "A simple, transparent process from first call to launch and beyond.",
+  "steps": [
+    {
+      "icon": "phoneCall",
+      "step": "Step 1",
+      "title": "Discovery Call",
+      "description": "We map your current workflows and pinpoint the highest-ROI automation opportunities."
+    },
+    {
+      "icon": "pencilRuler",
+      "step": "Step 2",
+      "title": "Workflow Design",
+      "description": "I design the architecture, define the integrations, and share a clear scope and timeline."
+    },
+    {
+      "icon": "hammer",
+      "step": "Step 3",
+      "title": "Build Automation",
+      "description": "I build and connect your n8n workflows, adding AI where it creates real leverage."
+    },
+    {
+      "icon": "rocket",
+      "step": "Step 4",
+      "title": "Testing, Launch & Support",
+      "description": "We test thoroughly, launch live, and I provide ongoing monitoring and improvements."
+    }
+  ]
+}

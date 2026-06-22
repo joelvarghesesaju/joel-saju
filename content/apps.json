@@ -1,0 +1,15 @@
+{
+  "heading": "Connecting the tools you already use",
+  "items": [
+    { "name": "n8n", "logo": "/logos/n8n.svg" },
+    { "name": "OpenAI", "logo": "/logos/openai.svg" },
+    { "name": "Google Workspace", "logo": "/logos/google-workspace.svg" },
+    { "name": "Slack", "logo": "/logos/slack.svg" },
+    { "name": "HubSpot", "logo": "/logos/hubspot.svg" },
+    { "name": "Stripe", "logo": "/logos/stripe.svg" },
+    { "name": "Notion", "logo": "/logos/notion.svg" },
+    { "name": "WhatsApp", "logo": "/logos/whatsapp.svg" },
+    { "name": "Microsoft 365", "logo": "/logos/microsoft-365.svg" },
+    { "name": "GitHub", "logo": "/logos/github.svg" }
+  ]
+}

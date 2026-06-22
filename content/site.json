@@ -1,0 +1,25 @@
+{
+  "brand": "Automate with Alex",
+  "tagline": "Custom n8n Automation Specialist",
+  "email": "hello@automatewithalex.com",
+  "calendarUrl": "https://cal.com/automatewithalex/discovery",
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Services", "href": "#services" },
+    { "label": "Industries", "href": "#industries" },
+    { "label": "Automations", "href": "#automations" },
+    { "label": "Case Studies", "href": "#case-studies" },
+    { "label": "Process", "href": "#process" },
+    { "label": "Testimonials", "href": "#testimonials" },
+    { "label": "FAQ", "href": "#faq" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "cta": { "label": "Book Free Call", "href": "#contact" },
+  "social": [
+    { "label": "X", "logo": "/logos/x.svg", "href": "https://x.com" },
+    { "label": "LinkedIn", "logo": "/logos/linkedin.svg", "href": "https://linkedin.com" },
+    { "label": "GitHub", "logo": "/logos/github.svg", "href": "https://github.com" },
+    { "label": "YouTube", "logo": "/logos/youtube.svg", "href": "https://youtube.com" }
+  ],
+  "footerDescription": "I design and build custom n8n automations that remove repetitive work, connect your tools, and free your team to focus on what actually grows the business."
+}

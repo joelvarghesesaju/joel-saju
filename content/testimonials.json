@@ -1,0 +1,38 @@
+{
+  "heading": "Trusted by busy founders",
+  "subtitle": "Here's what clients say after putting their operations on autopilot.",
+  "items": [
+    {
+      "name": "Sarah Mitchell",
+      "role": "Founder",
+      "company": "Brightside Realty",
+      "rating": 5,
+      "quote": "Our lead response time went from hours to minutes. The Facebook-to-HubSpot automation alone paid for itself in the first month.",
+      "avatar": "/testimonial-woman-founder.png"
+    },
+    {
+      "name": "James Carter",
+      "role": "COO",
+      "company": "NorthPeak Commerce",
+      "rating": 5,
+      "quote": "The AI support assistant handles the majority of our tickets now. My team finally gets to focus on the complex, high-value work.",
+      "avatar": "/testimonial-man-coo.png"
+    },
+    {
+      "name": "Elena Rodriguez",
+      "role": "Director of Ops",
+      "company": "Pulse Marketing",
+      "rating": 5,
+      "quote": "Monthly reporting used to eat two full days. Now it's completely hands-off and the AI summaries are genuinely insightful.",
+      "avatar": "/testimonial-woman-director.png"
+    },
+    {
+      "name": "David Okafor",
+      "role": "CEO",
+      "company": "Lumen SaaS",
+      "rating": 5,
+      "quote": "Alex understood our stack instantly and built onboarding automations that make every new customer feel premium from day one.",
+      "avatar": "/testimonial-man-ceo.png"
+    }
+  ]
+}

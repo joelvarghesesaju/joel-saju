@@ -1,0 +1,36 @@
+{
+  "heading": "Automations built around your workflow",
+  "subtitle": "From first touchpoint to invoice paid, I automate the busywork that slows your team down.",
+  "items": [
+    {
+      "icon": "magnet",
+      "title": "Lead Management Automation",
+      "description": "Capture, qualify, and route leads automatically across forms, ads, and inboxes so nothing slips through the cracks."
+    },
+    {
+      "icon": "users",
+      "title": "CRM Automation",
+      "description": "Keep HubSpot, Pipedrive, or Salesforce perfectly in sync with enriched contacts, deal updates, and instant follow-ups."
+    },
+    {
+      "icon": "bot",
+      "title": "AI Chatbots",
+      "description": "Deploy GPT-powered assistants that answer questions, qualify prospects, and book meetings 24/7 on your site and WhatsApp."
+    },
+    {
+      "icon": "receipt",
+      "title": "Invoice Automation",
+      "description": "Generate, send, and reconcile invoices automatically, then push payment data straight into your accounting stack."
+    },
+    {
+      "icon": "mail",
+      "title": "Email Automation",
+      "description": "Trigger personalized email sequences from real events, not guesswork, with AI-written copy tailored to each contact."
+    },
+    {
+      "icon": "workflow",
+      "title": "Custom n8n Workflows",
+      "description": "Have a unique process? I design bespoke n8n workflows that connect any API and scale with your business."
+    }
+  ]
+}

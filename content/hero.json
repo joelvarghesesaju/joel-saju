@@ -1,0 +1,22 @@
+{
+  "badge": "n8n Automation Specialist",
+  "headline": "Stop Wasting Hours on Repetitive Work.",
+  "subheadline": "I build custom n8n automations that eliminate manual tasks, reduce operational costs, and help your business run on autopilot.",
+  "primaryCta": { "label": "Book Free Discovery Call", "href": "#contact" },
+  "secondaryCta": { "label": "View Automations", "href": "#automations" },
+  "workflow": {
+    "title": "Lead → CRM → Notify",
+    "subtitle": "Live workflow",
+    "nodes": [
+      { "name": "Gmail", "logo": "/logos/gmail.svg" },
+      { "name": "Google Sheets", "logo": "/logos/google-sheets.svg" },
+      { "name": "Slack", "logo": "/logos/slack.svg" },
+      { "name": "HubSpot", "logo": "/logos/hubspot.svg" },
+      { "name": "OpenAI", "logo": "/logos/openai.svg" },
+      { "name": "Notion", "logo": "/logos/notion.svg" },
+      { "name": "Stripe", "logo": "/logos/stripe.svg" },
+      { "name": "WhatsApp", "logo": "/logos/whatsapp.svg" }
+    ],
+    "hub": { "name": "n8n", "logo": "/logos/n8n.svg" }
+  }
+}

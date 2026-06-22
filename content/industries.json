@@ -1,0 +1,16 @@
+{
+  "heading": "Industries we help",
+  "subtitle": "Automation principles are universal, but every build is tailored to your sector.",
+  "items": [
+    { "icon": "heartPulse", "name": "Healthcare", "description": "Patient intake, reminders, and records sync." },
+    { "icon": "home", "name": "Real Estate", "description": "Lead capture, follow-ups, and listing updates." },
+    { "icon": "megaphone", "name": "Marketing Agencies", "description": "Reporting, client onboarding, and content ops." },
+    { "icon": "shoppingCart", "name": "E-commerce", "description": "Order routing, support, and inventory alerts." },
+    { "icon": "landmark", "name": "Finance", "description": "Reconciliation, approvals, and compliance flows." },
+    { "icon": "cloud", "name": "SaaS", "description": "Onboarding, churn signals, and usage alerts." },
+    { "icon": "userSearch", "name": "Recruitment", "description": "Candidate sourcing, screening, and scheduling." },
+    { "icon": "graduationCap", "name": "Education", "description": "Enrollment, reminders, and progress tracking." },
+    { "icon": "truck", "name": "Logistics", "description": "Shipment tracking, alerts, and dispatch." },
+    { "icon": "briefcase", "name": "Professional Services", "description": "Proposals, invoicing, and client comms." }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "heading": "Featured automations",
+  "subtitle": "A look at real workflows I've built and the impact they deliver.",
+  "items": [
+    {
+      "icon": "bot",
+      "name": "Lead Qualification AI",
+      "problem": "Sales reps spend hours manually scoring and routing inbound leads.",
+      "solution": "An AI agent scores every lead, enriches it, and routes hot prospects to reps instantly.",
+      "apps": ["n8n", "OpenAI", "HubSpot", "Slack"],
+      "timeSaved": "12 hrs/week",
+      "roi": "3.2x pipeline"
+    },
+    {
+      "icon": "receipt",
+      "name": "Invoice Processing",
+      "problem": "Finance manually keys invoice data and chases approvals over email.",
+      "solution": "Invoices are parsed, validated, and pushed to accounting with automatic approval routing.",
+      "apps": ["n8n", "Gmail", "OpenAI", "QuickBooks"],
+      "timeSaved": "9 hrs/week",
+      "roi": "$1.8K/mo saved"
+    },
+    {
+      "icon": "messageCircle",
+      "name": "Customer Support AI",
+      "problem": "Support tickets pile up overnight and on weekends.",
+      "solution": "A GPT assistant resolves common tickets instantly and escalates the rest with full context.",
+      "apps": ["n8n", "OpenAI", "Zendesk", "Slack"],
+      "timeSaved": "20 hrs/week",
+      "roi": "68% auto-resolved"
+    },
+    {
+      "icon": "refreshCw",
+      "name": "CRM Sync",
+      "problem": "Data lives in five tools and none of them agree with each other.",
+      "solution": "A two-way sync keeps contacts, deals, and notes consistent across every platform in real time.",
+      "apps": ["n8n", "HubSpot", "Notion", "Google Sheets"],
+      "timeSaved": "7 hrs/week",
+      "roi": "Zero data drift"
+    },
+    {
+      "icon": "calendarCheck",
+      "name": "Appointment Booking",
+      "problem": "Back-and-forth scheduling delays bookings and frustrates clients.",
+      "solution": "Leads self-book qualified slots; reminders and follow-ups fire automatically.",
+      "apps": ["n8n", "Cal.com", "WhatsApp", "Gmail"],
+      "timeSaved": "6 hrs/week",
+      "roi": "40% more bookings"
+    },
+    {
+      "icon": "userPlus",
+      "name": "Employee Onboarding",
+      "problem": "New hires wait days for accounts, docs, and access to be set up.",
+      "solution": "One trigger provisions accounts, sends docs, and assigns onboarding tasks across tools.",
+      "apps": ["n8n", "Slack", "Notion", "Google Workspace"],
+      "timeSaved": "5 hrs/hire",
+      "roi": "Day-one ready"
+    }
+  ]
+}

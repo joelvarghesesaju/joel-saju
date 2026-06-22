@@ -1,0 +1,25 @@
+{
+  "heading": "Why automate?",
+  "subtitle": "The hidden cost of manual work compounds every single day. Automation flips it into an advantage.",
+  "problems": {
+    "title": "Common Problems",
+    "items": [
+      "Too much manual, repetitive work",
+      "Employees wasting hours on copy-paste tasks",
+      "Human errors creeping into critical data",
+      "Slow response times losing you deals",
+      "Disconnected software that doesn't talk"
+    ]
+  },
+  "benefits": {
+    "title": "With Automation",
+    "items": [
+      "Save hours every single week",
+      "Reduce operational costs significantly",
+      "Scale effortlessly without new hires",
+      "Eliminate repetitive, low-value work",
+      "Increase team productivity and morale",
+      "Run workflows reliably, 24/7"
+    ]
+  }
+}

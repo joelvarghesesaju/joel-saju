@@ -1,0 +1,27 @@
+{
+  "heading": "Real Business Results",
+  "subtitle": "Every workflow is designed to generate measurable ROI.",
+  "items": [
+    {
+      "icon": "building2",
+      "label": "Businesses Helped",
+      "value": 25,
+      "suffix": "+",
+      "prefix": ""
+    },
+    {
+      "icon": "clock",
+      "label": "Hours Saved Monthly",
+      "value": 750,
+      "suffix": "+",
+      "prefix": ""
+    },
+    {
+      "icon": "piggyBank",
+      "label": "Estimated Money Saved",
+      "value": 85,
+      "suffix": "K+",
+      "prefix": "$"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "badge": "Let's talk",
+  "heading": "Ready to put your business on autopilot?",
+  "subtitle": "Tell me about your workflows and I'll show you exactly where automation can save you time and money. No pressure, no jargon.",
+  "endpoint": "https://api.web3forms.com/submit",
+  "submitLabel": "Let's Automate Your Business",
+  "fields": [
+    { "name": "name", "label": "Name", "type": "text", "placeholder": "Jane Doe", "required": true },
+    { "name": "email", "label": "Email", "type": "email", "placeholder": "jane@company.com", "required": true },
+    { "name": "company", "label": "Company", "type": "text", "placeholder": "Acme Inc.", "required": false },
+    { "name": "message", "label": "Message", "type": "textarea", "placeholder": "What repetitive tasks are eating your team's time?", "required": true }
+  ]
+}
