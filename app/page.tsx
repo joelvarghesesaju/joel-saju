@@ -1,6 +1,12 @@
 import { client } from '@/sanity/lib/client'
-import { HERO_QUERY,STATS_QUERY,AUTOMATIONS_QUERY,CASE_STUDIES_QUERY,TESTIMONIALS_QUERY,FOOTER_QUERY} from '@/sanity/lib/queries'
-
+import {
+  HERO_QUERY,
+  STATS_QUERY,
+  AUTOMATIONS_QUERY,
+  CASE_STUDIES_QUERY,
+  TESTIMONIALS_QUERY,
+  FOOTER_QUERY
+} from '@/sanity/lib/queries'
 
 import { Navbar } from '@/components/navbar'
 import { Hero } from '@/components/sections/hero'
@@ -18,13 +24,15 @@ import { Faq } from '@/components/sections/faq'
 import { Contact } from '@/components/sections/contact'
 import { Footer } from '@/components/sections/footer'
 
+// 🚀 IMPORTANT: forces live CMS updates (fixes your issue)
+export const revalidate = 0
+
 export default async function HomePage() {
   const hero = await client.fetch(HERO_QUERY)
   const stats = await client.fetch(STATS_QUERY)
   const automations = await client.fetch(AUTOMATIONS_QUERY)
   const caseStudies = await client.fetch(CASE_STUDIES_QUERY)
-  const testimonials =
-  (await client.fetch(TESTIMONIALS_QUERY)) ?? null
+  const testimonials = await client.fetch(TESTIMONIALS_QUERY)
   const footer = await client.fetch(FOOTER_QUERY)
 
   return (
@@ -47,8 +55,8 @@ export default async function HomePage() {
         <Contact />
       </main>
 
-      <Footer footer={footer} />
+      {/* FIXED: no prop mismatch */}
+      <Footer />
     </div>
   )
 }
-
