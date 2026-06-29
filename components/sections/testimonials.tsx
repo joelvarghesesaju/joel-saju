@@ -63,7 +63,7 @@ export function Testimonials({ testimonials }: Props) {
                 {/* Author */}
                 <figcaption className="mt-6 flex items-center gap-4 border-t border-border/60 pt-6">
 
-                  <Image
+                  <img
                     src={item.avatar || '/placeholder.svg'}
                     alt={item.name}
                     width={48}
