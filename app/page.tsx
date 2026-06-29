@@ -38,7 +38,7 @@ export default async function HomePage() {
 
   const testimonials = await client.fetch(TESTIMONIALS_QUERY)
 
-console.log("🔥 RAW TESTIMONIALS:", testimonials)
+
 
   const footer =
     (await client.fetch(FOOTER_QUERY)) ?? null
@@ -58,9 +58,6 @@ console.log("🔥 RAW TESTIMONIALS:", testimonials)
         <CaseStudies caseStudies={caseStudies} />
         <Process />
         <WhyChoose />
-        <pre className="text-xs text-green-500">
-          {JSON.stringify(testimonials, null, 2)}
-        </pre>
 
         <Testimonials testimonials={testimonials} />
         <Faq />
