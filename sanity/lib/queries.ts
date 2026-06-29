@@ -29,9 +29,7 @@ export const CASE_STUDIES_QUERY = groq`
  */
 
 export const TESTIMONIALS_QUERY = groq`
-*[
-  _type == "testimonials" || _type == "testimonial"
-][0]{
+*[_type == "testimonials"][0]{
   heading,
   subtitle,
   items[]{
@@ -40,7 +38,7 @@ export const TESTIMONIALS_QUERY = groq`
     company,
     message,
     rating,
-    "avatar": avatar.asset->url
+    avatar
   }
 }
 `
