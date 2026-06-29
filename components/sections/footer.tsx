@@ -1,25 +1,65 @@
 import { Workflow } from 'lucide-react'
-import site from '@/content/site.json'
 
-export function Footer() {
+type Social = {
+  label: string
+  href: string
+  logo?: string
+}
+
+type NavItem = {
+  label: string
+  href: string
+}
+
+type FooterData = {
+  brandName: string
+  footerDescription: string
+  email: string
+  cta: {
+    label: string
+    href: string
+  }
+  social: Social[]
+  nav: NavItem[]
+}
+
+type Props = {
+  footer: FooterData | null
+}
+
+export function Footer({ footer }: Props) {
+  if (!footer) {
+    return (
+      <footer className="border-t border-border bg-card/30 py-10 text-center text-muted-foreground">
+        Loading footer...
+      </footer>
+    )
+  }
+
   return (
     <footer className="border-t border-border bg-card/30">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-12">
+
+          {/* Brand */}
           <div className="lg:col-span-5">
             <a href="#home" className="flex items-center gap-2.5">
               <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
                 <Workflow className="size-5" />
               </span>
               <span className="text-base font-semibold tracking-tight">
-                Automate with <span className="text-primary">Alex</span>
+                {footer.brandName}
               </span>
             </a>
-            <p className="mt-4 max-w-sm text-pretty text-sm leading-relaxed text-muted-foreground">
-              {site.footerDescription}
+
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+              {footer.footerDescription}
             </p>
+
+            {/* Socials */}
             <div className="mt-6 flex items-center gap-3">
-              {site.social.map((s) => (
+              {footer.social?.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
@@ -28,7 +68,6 @@ export function Footer() {
                   aria-label={s.label}
                   className="group flex size-10 items-center justify-center rounded-xl border border-border bg-background transition-colors hover:border-primary/50 hover:bg-primary/10"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={s.logo || '/placeholder.svg'}
                     alt=""
@@ -41,10 +80,14 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Navigation */}
           <nav className="lg:col-span-4 lg:col-start-7" aria-label="Footer">
-            <h3 className="text-sm font-semibold text-foreground">Navigation</h3>
+            <h3 className="text-sm font-semibold text-foreground">
+              Navigation
+            </h3>
+
             <ul className="mt-4 grid grid-cols-2 gap-x-6 gap-y-3">
-              {site.nav.map((item) => (
+              {footer.nav?.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
@@ -57,29 +100,37 @@ export function Footer() {
             </ul>
           </nav>
 
+          {/* Contact */}
           <div className="lg:col-span-3">
-            <h3 className="text-sm font-semibold text-foreground">Get in touch</h3>
+            <h3 className="text-sm font-semibold text-foreground">
+              Get in touch
+            </h3>
+
             <a
-              href={`mailto:${site.email}`}
+              href={`mailto:${footer.email}`}
               className="mt-4 block text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
-              {site.email}
+              {footer.email}
             </a>
+
             <a
-              href={site.cta.href}
+              href={footer.cta?.href}
               className="mt-4 inline-flex items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             >
-              {site.cta.label}
+              {footer.cta?.label}
             </a>
           </div>
+
         </div>
 
+        {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row">
           <p>
-            &copy; {new Date().getFullYear()} {site.brand}. All rights reserved.
+            &copy; {new Date().getFullYear()} {footer.brandName}. All rights reserved.
           </p>
-          <p>Built with n8n, Next.js &amp; a lot of coffee.</p>
+          <p>Built with Next.js, Sanity & automation workflows.</p>
         </div>
+
       </div>
     </footer>
   )

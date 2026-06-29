@@ -9,16 +9,16 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 })
 
-const siteUrl = 'https://automate-with-you.vercel.app'
+const siteUrl = 'https://joel-saju.vercel.app/'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Automate with Alex — Custom n8n Automation Specialist',
-    template: '%s | Automate with Alex',
+    default: 'FlowWeave — Custom n8n Automation Specialist',
+    template: '%s | FlowWeave',
   },
   description:
-    'I build custom n8n automations that eliminate manual tasks, reduce operational costs, and help your business run on autopilot. Book a free discovery call.',
+    'I build custom  n8n automations that eliminate manual work, cut costs, and run your business on autopilot.',
   keywords: [
     'n8n',
     'automation',
@@ -29,23 +29,23 @@ export const metadata: Metadata = {
     'CRM automation',
     'lead automation',
   ],
-  authors: [{ name: 'Alex' }],
-  creator: 'Automate with Alex',
+  authors: [{ name: 'Joel' }],
+  creator: 'FlowWeave',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: siteUrl,
-    title: 'Automate with Alex — Custom n8n Automation Specialist',
+    title: 'FlowWeave — Custom n8n Automation Specialist',
     description:
       'Custom n8n automations that eliminate manual work, cut costs, and run your business on autopilot.',
-    siteName: 'Automate with Alex',
+    siteName: 'FlowWeave',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Automate with Alex — Custom n8n Automation Specialist',
+    title: 'FlowWeave — Custom n8n Automation Specialist',
     description:
       'Custom n8n automations that eliminate manual work, cut costs, and run your business on autopilot.',
-    creator: '@automatewithalex',
+    creator: '@FlowWeave',
   },
   generator: 'v0.app',
 }

@@ -3,16 +3,30 @@
 import { motion } from 'motion/react'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { WorkflowIllustration } from '@/components/workflow-illustration'
-import hero from '@/content/hero.json'
+
+type HeroData = {
+  badge: string
+  headline: string
+  subheadline: string
+  primaryButtonText: string
+  primaryButtonLink: string
+  secondaryButtonText: string
+  secondaryButtonLink: string
+  workflowTitle: string
+  workflowSubtitle: string
+}
 
 const fade = {
   hidden: { opacity: 0, y: 24 },
   visible: { opacity: 1, y: 0 },
 }
 
-export function Hero() {
+export function Hero({ hero }: { hero: HeroData }) {
   return (
-    <section id="home" className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28">
+    <section
+      id="home"
+      className="relative overflow-hidden pt-32 pb-20 sm:pt-40 sm:pb-28"
+    >
       {/* background accents */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-0 h-[480px] w-[820px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]" />
@@ -59,19 +73,24 @@ export function Hero() {
             {hero.subheadline}
           </motion.p>
 
-          <motion.div variants={fade} transition={{ duration: 0.6 }} className="flex flex-col gap-3 sm:flex-row">
+          <motion.div
+            variants={fade}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col gap-3 sm:flex-row"
+          >
             <a
-              href={hero.primaryCta.href}
+              href={hero.primaryButtonLink}
               className="group inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-all hover:bg-primary/90 hover:shadow-primary/40"
             >
-              {hero.primaryCta.label}
+              {hero.primaryButtonText}
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
             </a>
+
             <a
-              href={hero.secondaryCta.href}
+              href={hero.secondaryButtonLink}
               className="inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-card/50 px-6 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-card"
             >
-              {hero.secondaryCta.label}
+              {hero.secondaryButtonText}
             </a>
           </motion.div>
         </motion.div>
@@ -84,12 +103,16 @@ export function Hero() {
         >
           <div className="rounded-3xl border border-border bg-card/40 p-6 backdrop-blur-sm sm:p-10">
             <div className="mb-4 flex items-center justify-between">
-              <span className="text-sm font-medium text-foreground">{hero.workflow.title}</span>
+              <span className="text-sm font-medium text-foreground">
+                {hero.workflowTitle}
+              </span>
+
               <span className="inline-flex items-center gap-1.5 text-xs text-primary">
                 <span className="size-2 animate-pulse rounded-full bg-primary" />
-                {hero.workflow.subtitle}
+                {hero.workflowSubtitle}
               </span>
             </div>
+
             <WorkflowIllustration />
           </div>
         </motion.div>

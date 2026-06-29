@@ -39,7 +39,7 @@ export function Navbar() {
             <Workflow className="size-5" />
           </span>
           <span className="text-sm font-semibold tracking-tight sm:text-base">
-            Automate with <span className="text-primary">Alex</span>
+            FlowWeave
           </span>
         </a>
 

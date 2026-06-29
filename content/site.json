@@ -1,8 +1,8 @@
 {
-  "brand": "Automate with Alex",
+  "brand": "FlowWeave",
   "tagline": "Custom n8n Automation Specialist",
-  "email": "hello@automatewithalex.com",
-  "calendarUrl": "https://cal.com/automatewithalex/discovery",
+  "email": "joelvsaju07@gmail.com",
+  "calendarUrl": "https://cal.com/automatewithJoel/discovery",
   "nav": [
     { "label": "Home", "href": "#home" },
     { "label": "Services", "href": "#services" },
