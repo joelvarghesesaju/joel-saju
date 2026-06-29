@@ -24,16 +24,23 @@ import { Faq } from '@/components/sections/faq'
 import { Contact } from '@/components/sections/contact'
 import { Footer } from '@/components/sections/footer'
 
-// 🚀 IMPORTANT: forces live CMS updates (fixes your issue)
+/**
+ * 🚀 FORCE LIVE CMS UPDATES (fixes stale data issue)
+ */
 export const revalidate = 0
 
 export default async function HomePage() {
+  // CMS DATA FETCH (safe + stable)
   const hero = await client.fetch(HERO_QUERY)
   const stats = await client.fetch(STATS_QUERY)
   const automations = await client.fetch(AUTOMATIONS_QUERY)
   const caseStudies = await client.fetch(CASE_STUDIES_QUERY)
-  const testimonials = await client.fetch(TESTIMONIALS_QUERY)
-  const footer = await client.fetch(FOOTER_QUERY)
+
+  const testimonials =
+    (await client.fetch(TESTIMONIALS_QUERY)) ?? null
+
+  const footer =
+    (await client.fetch(FOOTER_QUERY)) ?? null
 
   return (
     <div className="min-h-screen bg-background">
@@ -55,8 +62,8 @@ export default async function HomePage() {
         <Contact />
       </main>
 
-      {/* FIXED: no prop mismatch */}
-      <Footer />
+      {/* CMS-powered footer (safe rendering) */}
+      <Footer footer={footer} />
     </div>
   )
 }

@@ -65,38 +65,37 @@ export const CASE_STUDIES_QUERY = groq`
 `
 
 export const TESTIMONIALS_QUERY = groq`
-  *[_type == "testimonials"][0]{
-    heading,
-    subtitle,
-    items[]{
-      name,
-      role,
-      company,
-      message,
-      avatar,
-      rating
-    }
+*[_type == "testimonials"]{
+  heading,
+  subtitle,
+  items[]{
+    name,
+    role,
+    company,
+    message,
+    avatar,
+    rating
   }
+}[0]
 `
 
-
 export const FOOTER_QUERY = groq`
-  *[_type == "footer"][0]{
-    brandName,
-    footerDescription,
-    email,
-    cta{
-      label,
-      href
-    },
-    social[]{
-      label,
-      href,
-      logo
-    },
-    nav[]{
-      label,
-      href
-    }
+*[_type == "footer"][0]{
+  brandName,
+  footerDescription,
+  email,
+  cta{
+    label,
+    href
+  },
+  social[]{
+    label,
+    href,
+    "logo": logo.asset->url
+  },
+  nav[]{
+    label,
+    href
   }
+}
 `

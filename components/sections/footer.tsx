@@ -12,15 +12,15 @@ type NavItem = {
 }
 
 type FooterData = {
-  brandName: string
-  footerDescription: string
-  email: string
-  cta: {
-    label: string
-    href: string
+  brandName?: string
+  footerDescription?: string
+  email?: string
+  cta?: {
+    label?: string
+    href?: string
   }
-  social: Social[]
-  nav: NavItem[]
+  social?: Social[]
+  nav?: NavItem[]
 }
 
 type Props = {
@@ -28,13 +28,8 @@ type Props = {
 }
 
 export function Footer({ footer }: Props) {
-  if (!footer) {
-    return (
-      <footer className="border-t border-border bg-card/30 py-10 text-center text-muted-foreground">
-        Loading footer...
-      </footer>
-    )
-  }
+  // 🚀 If no data, fail gracefully (no infinite "loading footer")
+  if (!footer) return null
 
   return (
     <footer className="border-t border-border bg-card/30">
@@ -48,13 +43,14 @@ export function Footer({ footer }: Props) {
               <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
                 <Workflow className="size-5" />
               </span>
+
               <span className="text-base font-semibold tracking-tight">
-                {footer.brandName}
+                {footer.brandName ?? 'Brand'}
               </span>
             </a>
 
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              {footer.footerDescription}
+              {footer.footerDescription ?? ''}
             </p>
 
             {/* Socials */}
@@ -70,7 +66,7 @@ export function Footer({ footer }: Props) {
                 >
                   <img
                     src={s.logo || '/placeholder.svg'}
-                    alt=""
+                    alt={s.label}
                     width={18}
                     height={18}
                     className="size-[18px] object-contain opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0"
@@ -106,19 +102,23 @@ export function Footer({ footer }: Props) {
               Get in touch
             </h3>
 
-            <a
-              href={`mailto:${footer.email}`}
-              className="mt-4 block text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {footer.email}
-            </a>
+            {footer.email && (
+              <a
+                href={`mailto:${footer.email}`}
+                className="mt-4 block text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {footer.email}
+              </a>
+            )}
 
-            <a
-              href={footer.cta?.href}
-              className="mt-4 inline-flex items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              {footer.cta?.label}
-            </a>
+            {footer.cta && (
+              <a
+                href={footer.cta.href}
+                className="mt-4 inline-flex items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                {footer.cta.label}
+              </a>
+            )}
           </div>
 
         </div>
@@ -126,7 +126,8 @@ export function Footer({ footer }: Props) {
         {/* Bottom bar */}
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row">
           <p>
-            &copy; {new Date().getFullYear()} {footer.brandName}. All rights reserved.
+            &copy; {new Date().getFullYear()} {footer.brandName ?? 'Company'}.
+            All rights reserved.
           </p>
           <p>Built with Next.js, Sanity & automation workflows.</p>
         </div>
